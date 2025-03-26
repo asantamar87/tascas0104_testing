@@ -1,10 +1,9 @@
 package level1;
 
 public class DniCalculator {
+    private static final String LETTERS = "TRWAGMYFPDXBNJZSQVHLCKE";
     public static char calculateLetter(int dniNumber) {
-        String letters = "TRWAGMYFPDXBNJZSQVHLCKE";
-        int charIndex = dniNumber % 23;
-        return letters.charAt(charIndex);
+        return LETTERS.charAt(dniNumber % 23);
     }
 
 }
